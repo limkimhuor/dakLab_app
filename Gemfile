@@ -38,7 +38,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-    gem 'rspec'
+  gem 'rspec'
   gem 'rspec-rails'
   gem 'rspec-collection_matchers'
   gem 'better_errors'
@@ -49,6 +49,13 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'rubocop', '~> 0.35.0', require: false
   gem 'rubocop-checkstyle_formatter', require: false
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'simplecov'
+  gem 'simplecov-rcov'
+  gem 'shoulda-context'
 end
 
 group :development do
