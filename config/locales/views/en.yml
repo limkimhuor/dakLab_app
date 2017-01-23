@@ -1,0 +1,39 @@
+en:
+  dictionary:
+    change_my_password: &change_my_password Change my password
+    confirm_new_password: &confirm_new_password Confirm new password
+    email: &email Email
+    forgot_password: &forgot_password Forgot your password?
+    log_in: &log_in Log in
+    new_password: &new_password New password
+    password: &password Password
+    remember_me: &remember_me Remember me
+    send_reset_pass_instruction: &send_reset_pass_instruction Send me reset password instructions
+    sign_in: &sign_in Sign in
+    sign_out: &sign_out Sign out
+  manager_top_pages:
+    home:
+      sign_out: *sign_out
+  managers:
+    passwords:
+      edit:
+        change_my_password: *change_my_password
+        confirm_new_password: &confirm_new_password
+        new_password: *new_password
+      new:
+        email: *email
+        send_reset_pass_instruction: *send_reset_pass_instruction
+    shared:
+      links:
+        log_in: *log_in
+        forgot_password: *forgot_password
+    sessions:
+      new:
+        email: *email
+        log_in: *log_in
+        password: *password
+        remember_me: *remember_me
+  static_pages:
+    home:
+      sign_in: *sign_in
+
